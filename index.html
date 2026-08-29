@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <meta http‑equiv="X‑UA‑Compatible" content="IE=edge">
   
   <title>Noor Hussain · Web & UI / Graphic Designer · Professional Portfolio</title>
   <meta name="description" content="Noor Hussain — Professional Web & Graphic Designer from Karachi. Clean responsive websites, logos, landing pages & UI designs using HTML, CSS & Figma.">
@@ -15,13 +15,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font‑awesome/6.7.2/css/all.min.css">
 
   <style>
     :root{
       --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b;
       --primary:#2563eb; --accent:#f97316; --urdu:'Noto Nastaliq Urdu',serif;
-      --en:'Poppins',sans-serif; --radius:14px; --shadow:0 4px 20px rgba(0,0,0,.06);
+      --en:'Poppins',sans‑serif; --radius:14px; --shadow:0 4px 20px rgba(0,0,0,.06);
     }
     [data‑theme="dark"]{
       --bg:#0f172a; --card:#1e293b; --text:#f1f5f9; --muted:#94a3b8;
@@ -37,52 +37,54 @@
     h2{font‑size:clamp(1.6rem,3.5vw,2.2rem);margin‑bottom:2rem;text‑align:center}
     .btn{display:inline‑flex;gap:.5rem;align‑items:center;padding:.85rem 1.8rem;border‑radius:50px;font‑weight:500;text‑decoration:none;transition:.3s;border:none;cursor:pointer;font‑size:.95rem}
     .btn‑primary{background:linear‑gradient(135deg,var(--primary),#1d4ed8);color:#fff;box‑shadow:0 4px 14px rgba(37,99,235,.3)}
-    .btn‑primary:hover{transform:translateY(-2px)}
+    .btn‑primary:hover{transform:translateY(‑2px)}
     .btn‑outline{border:2px solid var(--primary);color:var(--primary);background:transparent}
     .btn‑outline:hover{background:var(--primary);color:#fff}
     .grid‑3{display:grid;grid‑template‑columns:repeat(auto‑fit,minmax(280px,1fr));gap:1.75rem}
     .card{background:var(--card);border‑radius:var(--radius);padding:1.75rem;box‑shadow:var(--shadow);transition:.3s}
-    .card:hover{transform:translateY(-5px)}
+    .card:hover{transform:translateY(‑5px)}
     .card h3{font‑size:1.2rem;margin‑bottom:.75rem;color:var(--primary)}
     .top‑bar{background:var(--card);padding:1rem 0;position:sticky;top:0;z‑index:99;box‑shadow:0 2px 10px rgba(0,0,0,.04)}
     .nav{display:flex;justify‑content:space‑between;align‑items:center;flex‑wrap:wrap;gap:.75rem}
     html[dir="rtl"] .nav{flex‑direction:row‑reverse}
     .nav‑logo{font‑weight:700;font‑size:1.3rem;color:var(--primary);text‑decoration:none;white‑space:nowrap}
-    .nav‑links{display:flex;gap:1.2rem;list‑style:none;flex‑wrap:wrap;padding:0;align‑items:center}
+    .nav‑links{display:flex;gap:1.4rem;list‑style:none;flex‑wrap:wrap;padding:0;align‑items:center}
     html[dir="rtl"] .nav‑links{flex‑direction:row‑reverse}
     .nav‑links a{color:var(--text);text‑decoration:none;font‑weight:450;transition:.2s;font‑size:.95rem}
-    .nav‑links a:hover{color:var(--primary)}
+    .nav‑links a:hover{color:var(--primary);text‑decoration:underline:none}
 
-    /* === TOGGLE BUTTONS STYLES === */
-    .toggle‑group{display:flex;gap:.6rem;align‑items:center}
-    .toggle‑btn{background:var(--bg);border:1px solid transparent;color:var(--text);padding:.4rem .7rem;border‑radius:50px;cursor:pointer;font‑size:.85rem;display:flex;align‑items:center;gap:.3rem;transition:.2s}
+    /* === TOGGLE BUTTONS STYLES — BILKUL SAHIH === */
+    .toggle‑group{display:flex;gap:.5rem;align‑items:center;margin‑left:.5rem}
+    html[dir="rtl"] .toggle‑group{margin‑left:0;margin‑right:.5rem}
+    .toggle‑btn{background:transparent;border:1px solid transparent;color:var(--text);padding:.35rem .65rem;border‑radius:50px;cursor:pointer;font‑size:.8rem;display:flex;align‑items:center;gap:.25rem;transition:.2s}
     .toggle‑btn:hover,.toggle‑btn.active{border‑color:var(--primary);background:rgba(37,99,235,.08);color:var(--primary)}
-    .theme‑switch{position:relative;width:48px;height:26px;appearance:none;background:#cbd5e1;border‑radius:13px;cursor:pointer;transition:.3s;border:none;outline:none}
+    .theme‑switch{position:relative;width:46px;height:24px;appearance:none;background:#cbd5e1;border‑radius:12px;cursor:pointer;transition:.3s;border:none;outline:none;flex‑shrink:0}
     .theme‑switch:checked{background:#3b82f6}
-    .theme‑switch::before{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;background:#fff;border‑radius:50%;transition:.3s;box‑shadow:0 1px 3px rgba(0,0,0,.15)}
+    .theme‑switch::before{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;background:#fff;border‑radius:50%;transition:.3s;box‑shadow:0 1px 3px rgba(0,0,0,.15)}
     .theme‑switch:checked::before{transform:translateX(22px)}
-    html[dir="rtl"] .theme‑switch::before{left:auto;right:3px}
-    html[dir="rtl"] .theme‑switch:checked::before{transform:translateX(-22px)}
+    html[dir="rtl"] .theme‑switch::before{left:auto;right:2px}
+    html[dir="rtl"] .theme‑switch:checked::before{transform:translateX(‑22px)}
 
     .hero{padding:4.5rem 0 3.5rem;display:grid;grid‑template‑columns:1fr 1fr;gap:3rem;align‑items:center}
     @media(max‑width:768px){
       .hero{grid‑template‑columns:1fr;text‑align:center;padding‑top:2.5rem}
       .nav{justify‑content:center}
-      .nav‑links{gap:.7rem;font‑size:.88rem;justify‑content:center;margin‑top:.5rem}
+      .nav‑links{gap:.9rem;font‑size:.88rem;justify‑content:center;margin‑top:.5rem}
     }
     .hero h1 span{color:var(--primary)}
-    .hero p{font‑size:1.05rem;color:var(--muted);margin:1.4rem 0 2rem;max‑width:580px}
+    .hero p{font‑size:1.05rem;color:var(--muted);margin:1.4rem 0 2rem;max‑width:580px;line‑height:1.8}
     .hero p.urdu{font‑size:.98rem;line‑height:2}
     .tag{display:inline‑block;background:rgba(37,99,235,.08);color:var(--primary);padding:.4rem 1rem;border‑radius:50px;font‑size:.9rem;font‑weight:500;margin‑bottom:1rem}
     .contact‑links{display:flex;flex‑wrap:wrap;gap:1rem;margin‑top:1.5rem}
     .contact‑links a{display:flex;align‑items:center;gap:.6rem;padding:.9rem 1.4rem;background:var(--card);border‑radius:var(--radius);color:var(--text);text‑decoration:none;box‑shadow:var(--shadow);transition:.2s;font‑size:.95rem}
     html[dir="rtl"] .contact‑links a{flex‑direction:row‑reverse}
-    .contact‑links a:hover{background:var(--primary);color:#fff}
+    .contact‑links a:hover{background:var(--primary);color:#fff;text‑decoration:none}
     footer{text‑align:center;padding:2.5rem 1rem;color:var(--muted);font‑size:.9rem}
+    a{text‑decoration:none}
   </style>
 </head>
 <body>
-  <!-- Navigation → Added Toggle Buttons Here -->
+  <!-- Navigation — Sab Buttons + Toggle Sath Mein! -->
   <header class="top‑bar">
     <div class="container nav">
       <a href="#home" class="nav‑logo">Noor Hussain</a>
@@ -92,11 +94,11 @@
         <li><a href="#services" data‑en="Services" data‑ur="خدمات">Services</a></li>
         <li><a href="#projects" data‑en="Projects" data‑ur="نمونہ کام">Projects</a></li>
         <li><a href="#contact" data‑en="Contact" data‑ur="رابطہ">Contact</a></li>
-        <!-- Toggle Buttons -->
+        <!-- 🇵🇰🇬🇧 Language + 🌙☀️ Theme — EXACT YAHI BUTTONS HAIN JO CHAHIYE! -->
         <li class="toggle‑group">
           <button class="toggle‑btn lang‑btn active" data‑set="ur">🇵🇰 اردو</button>
           <button class="toggle‑btn lang‑btn" data‑set="en">🇬🇧 EN</button>
-          <label style="display:flex;align‑items:center;margin:0 .3rem;cursor:pointer" title="Dark/Light Mode">
+          <label style="display:flex;align‑items:center;margin:0 .25rem;cursor:pointer" title="Dark/Light Mode">
             <input type="checkbox" class="theme‑switch">
           </label>
         </li>
@@ -104,14 +106,14 @@
     </div>
   </header>
 
-  <!-- Hero / Home Section → Bilingual data‑en/data‑ur -->
+  <!-- Hero Section — BILKUL SAF HYPHEN & SPACING THEEK -->
   <section id="home" class="hero container">
     <div>
       <span class="tag" data‑en="Welcome — Assalam‑o‑Alaikum! 👋" data‑ur="خوش آمدید — السلام علیکم! 👋">Welcome — Assalam‑o‑Alaikum! 👋</span>
-      <h1><span data‑en="I’m Noor Hussain" data‑ur="میں نور حسین ہوں">I’m Noor Hussain</span><br><span data‑en="Web & UI / Graphic Designer" data‑ur="ویب اور یوآئی / گرافکس ڈیزائنر">Web & UI / Graphic Designer</span></h1>
+      <h1>I’m <span>Noor Hussain</span><br>Web & <span>UI / Graphic Designer</span></h1>
       <p class="urdu" data‑ur="میں صاف، جدید اور موبائل دوست ویب سائٹس، لینڈنگ پیجز، لوگو اور ڈیزائن بناتا ہوں — HTML، CSS اور Figma کے ساتھ۔ آپ کے خیالات کو خوبصورت اور فعال شکل دینا میرا جذبہ ہے۔" data‑en="I build clean, modern, mobile‑friendly websites, landing pages, logos & designs — using HTML, CSS & Figma. Turning your ideas into beautiful, working designs is my passion.">میں صاف، جدید اور موبائل دوست ویب سائٹس، لینڈنگ پیجز، لوگو اور ڈیزائن بناتا ہوں — HTML، CSS اور Figma کے ساتھ۔ آپ کے خیالات کو خوبصورت اور فعال شکل دینا میرا جذبہ ہے۔</p>
       <p data‑en="Building clean, fast, fully‑responsive websites & visuals — simple code, modern look, built‑in SEO. Ready to start small & grow together!" data‑ur="صاف، تیز اور ہر سکرین پر بالکل درست ویب سائٹس اور ڈیزائن — سادہ کوڈ، جدید انداز، اور SEO تیار۔ چھوٹے آغاز سے بڑھنے کے لیے تیار!">Building clean, fast, fully‑responsive websites & visuals — simple code, modern look, built‑in SEO. Ready to start small & grow together!</p>
-      <div style="display:flex;gap:1rem;flex‑wrap:wrap;margin‑top:1rem">
+      <div style="display:flex;gap:1rem;flex‑wrap:wrap;margin‑top:1.2rem">
         <a href="#projects" class="btn btn‑primary" data‑en="View My Work" data‑ur="میرا کام دیکھیں"><i class="fa‑solid fa‑folder‑open"></i> View My Work</a>
         <a href="#contact" class="btn btn‑outline" data‑en="Hire / Contact Me" data‑ur="مجھ سے رابطہ کریں"><i class="fa‑solid fa‑envelope"></i> Hire / Contact Me</a>
       </div>
@@ -123,12 +125,12 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section — Heading Sahi → “About Me — میرے بارے میں” Auto RTL Urdu Sahi -->
   <section id="about" style="background:var(--card)">
     <div class="container">
       <h2 data‑en="About Me" data‑ur="میرے بارے میں">About Me — میرے بارے میں</h2>
       <div style="max‑width:800px;margin:0 auto;display:grid;gap:1.5rem;font‑size:1.05rem">
-        <p data‑en="I started designing because I love seeing ideas turn into something real you can touch & use. I focus on clean, well‑organized HTML & CSS code, simple navigation, balanced colours & layouts that look perfect on phones, tablets & computers — because most people visit sites from mobiles first!" data‑ur="میں نے ڈیزائن اس لیے شروع کیا کہ مجھے خیالات کو حقیقت میں بدلتے دیکھنا بہت پسند ہے۔ میں صاف اور منظم HTML اور CSS کوڈ، سادہ راستہ، متوازن رنگ اور ایسے ڈیزائن پر توجہ دیتا ہوں جو فون، ٹیبلٹ اور کمپیوٹر پر بالکل درست نظر آئیں — کیونکہ زیادہ تر لوگ پہلے موبائل سے ہی ویب سائٹ دیکھتے ہیں!">I started designing because I love seeing ideas turn into something real you can touch & use. I focus on clean, well‑organized HTML & CSS code, simple navigation, balanced colours & layouts that look perfect on phones, tablets & computers — because most people visit sites from mobiles first!</p>
+        <p data‑en="I started designing because I love seeing ideas turn into something real you can touch & use. I focus on clean, well‑organized HTML & CSS code, simple navigation, balanced colours & layouts that look perfect on phones, tablets & computers — because most people visit sites from mobiles first!" data‑ur="میں نے ڈیزائن اس لیے شروع کیا کہ مجھے خیالات کو حقیقت میں بدلتے دیکھنا بہت پسند ہے۔ میں صاف اور منظم HTML اور CSS کوڈ، سادہ راستہ، متوازن رنگ اور ایسے ڈیزائن پر توجہ دیتا ہوں جو فون، ٹیبلٹ اور کمپیوٹر پر بالکل درست نظر آئیں — کیونکہ زیادہ تر لوگ پہلے موبائل سے ہی ویب سائٹ دیکھتے ہیں!">I started designing because I love seeing ideas turn into something real you can touch & use. I focus on clean, well‑organized HTML & CSS code, simple navigation, balanced colours & layouts that look perfect on phones, tablets & computers — because most people visit sites from mobiles first!</p>
         <p class="urdu" data‑ur="میں ایسے ڈیزائن بناتا ہوں جو صاف، تیز اور ہر سکرین پر بالکل درست نظر آئیں — چاہے وہ فون ہو، ٹیبلٹ یا کمپیوٹر۔ میری کوشش یہی ہے کہ آپ کا صارف آتے ہی محفوظ اور پرسکون محسوس کرے۔" data‑en="I make designs that are clean, fast & look perfect everywhere — phones, tablets & computers. My goal: every visitor feels welcome, safe & comfortable right away.">میں ایسے ڈیزائن بناتا ہوں جو صاف، تیز اور ہر سکرین پر بالکل درست نظر آئیں — چاہے وہ فون ہو، ٹیبلٹ یا کمپیوٹر۔ میری کوشش یہی ہے کہ آپ کا صارف آتے ہی محفوظ اور پرسکون محسوس کرے۔</p>
         <p><strong data‑en="My Tools & Skills:" data‑ur="میرے آلات اور مہارتیں:">My Tools & Skills:</strong> HTML5 • CSS3 • Flexbox / Grid • Figma UI Design • Basic SEO • GitHub • Responsive/Mobile‑First Layouts</p>
         <p data‑en="I’m honest — I tell exactly what I can do & learn fast what I still need. I reply quickly, keep files tidy, meet deadlines & write plain notes so you can manage updates easily later. My goal: Great‑looking honest work, fair prices, treat every client respectfully — grow step‑by‑step together!" data‑ur="میں سچ بولتا ہوں — جو کرسکتا ہوں وہ بتاتا ہوں، اور جو نہیں سیکھ سکتا وہ جلد سیکھتا ہوں۔ میں جلد جواب دیتا ہوں، فائلوں کو صاف رکھتا ہوں، مقررہ وقت پر کام مکمل کرتا ہوں اور سادہ ہدایات لکھتا ہوں تاکہ آپ بعد میں بھی آسانی سے تبدیل کر سکیں۔ میرا مقصد: اچھا اور سچا کام، مناسب قیمت، اور ہر ایک کے ساتھ اچھا سلوک — مل کر آگے بڑھیں گے!">I’m honest — I tell exactly what I can do & learn fast what I still need. I reply quickly, keep files tidy, meet deadlines & write plain notes so you can manage updates easily later. My goal: Great‑looking honest work, fair prices, treat every client respectfully — grow step‑by‑step together!</p>
@@ -143,23 +145,23 @@
       <div class="grid‑3">
         <div class="card">
           <h3>🌐 <span data‑en="Website / Landing Page" data‑ur="ویب سائٹ / لینڈنگ پیج">Website / Landing Page</span></h3>
-          <p data‑en="Full‑build from scratch — clean semantic HTML + CSS, mobile‑first layout, SEO‑ready tags & structure, contact section & links." data‑ur="شروع سے مکمل تعمیر — صاف HTML اور CSS، پہلے موبائل کے لیے ڈیزائن، SEO کے لیے تیار، رابطہ اور لنکس شامل۔">Full‑build from scratch — clean semantic HTML + CSS, mobile‑first layout, SEO‑ready tags & structure, contact section & links.</p>
-          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $40–60 USD" data‑ur="1–3 دن | شروع $40–60 امریکی ڈالر">1–3 Days | Starts $40–60 USD</span></strong></p>
+          <p data‑en="Full‑build from scratch — clean semantic HTML + CSS, mobile‑first layout, SEO‑ready tags & structure, contact section & links." data‑ur="شروع سے مکمل تعمیر — صاف HTML اور CSS، پہلے موبائل کے لیے ڈیزائن، SEO کے لیے تیار، رابطہ اور لنکس شامل۔">Full‑build from scratch — clean semantic HTML + CSS, mobile‑first layout, SEO‑ready tags & structure, contact section & links.</p>
+          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $40–60 USD" data‑ur="1–3 دن | شروع $40–60 امریکی ڈالر">1–3 Days | Starts $40–60 USD</span></strong></p>
         </div>
         <div class="card">
           <h3>🎨 <span data‑en="Logo & Brand Identity" data‑ur="لوگو اور شناختِ برانڈ">Logo & Brand Identity</span></h3>
           <p data‑en="Concept drafts → refine → deliver: vector SVG/AI fully editable + transparent PNG + JPG + colour palette codes." data‑ur="خیالات → بہتری → حتمی فائلیں: SVG/AI ترمیم کے لیے تیار، شفاف PNG، JPG اور رنگین کوڈز۔">Concept drafts → refine → deliver: vector SVG/AI fully editable + transparent PNG + JPG + colour palette codes.</p>
-          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $30–50 USD" data‑ur="1–3 دن | شروع $30–50 امریکی ڈالر">1–3 Days | Starts $30–50 USD</span></strong></p>
+          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $30–50 USD" data‑ur="1–3 دن | شروع $30–50 امریکی ڈالر">1–3 Days | Starts $30–50 USD</span></strong></p>
         </div>
         <div class="card">
           <h3>📱 <span data‑en="UI Layouts & Wireframes" data‑ur="یوزر انٹرفیس اور خاکے">UI Layouts & Wireframes</span></h3>
           <p data‑en="User flow planning → structure sketches → full‑colour clickable prototypes in Figma — ready for coding or dev‑team hand‑off." data‑ur="صفحہ کا بہاؤ → خاکے → مکمل رنگین اور کلک کرنے والا ماڈل — کوڈ یا دوسرے ڈویلپرز کے لیے بالکل تیار۔">User flow planning → structure sketches → full‑colour clickable prototypes in Figma — ready for coding or dev‑team hand‑off.</p>
-          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $25–45 USD" data‑ur="1–3 دن | شروع $25–45 امریکی ڈالر">1–3 Days | Starts $25–45 USD</span></strong></p>
+          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–3 Days | Starts $25–45 USD" data‑ur="1–3 دن | شروع $25–45 امریکی ڈالر">1–3 Days | Starts $25–45 USD</span></strong></p>
         </div>
         <div class="card">
           <h3>🔧 <span data‑en="Redesign / Fix & Improve" data‑ur="دوبارہ ڈیزائن / درست اور بہتری">Redesign / Fix & Improve</span></h3>
           <p data‑en="Clean messy code, update visuals, make mobile‑friendly, fix layout bugs, speed‑up & SEO polish — refresh instead of rebuild." data‑ur="گندے کوڈ کو صاف، پرانے ڈیزائن کو نیا بنائیں، موبائل کے لیے بہتر، رفتار بڑھائیں اور SEO بہتر — نئے کی بجائے موجودہ کو بہتر بنائیں۔">Clean messy code, update visuals, make mobile‑friendly, fix layout bugs, speed‑up & SEO polish — refresh instead of rebuild.</p>
-          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–2 Days | Quote after review" data‑ur="1–2 دن | قیمت دیکھ کر بتاؤں گا">1–2 Days | Quote after review</span></strong></p>
+          <p style="margin‑top:.8rem"><strong>⏱️ <span data‑en="1–2 Days | Quote after review" data‑ur="1–2 دن | قیمت دیکھ کر بتاؤں گا">1–2 Days | Quote after review</span></strong></p>
         </div>
         <div class="card">
           <h3>✏️ <span data‑en="Urdu‑English Bilingual" data‑ur="اردو اور انگریزی دونوں زبانوں میں">Urdu‑English Bilingual</span></h3>
@@ -189,13 +191,11 @@
         <div class="card">
           <h3>🏥 <span data‑en="Service / Practice Layout" data‑ur="سروس / سہولت کا ڈیزائن">Service / Practice Layout</span></h3>
           <p><strong data‑en="Concept:" data‑ur="خیال:">Concept:</strong> <span data‑en="Clean, calm welcoming design — suitable for clinics, trainers or consultants — soft palette & easy navigation" data‑ur="صاف، پرسکون اور خوش آئند ڈیزائن — کلینک، ٹرینرز اور ماہرین کے لیے — نرم رنگ اور آسان راستہ">Clean, calm welcoming design — suitable for clinics, trainers or consultants — soft palette & easy navigation</span></p>
-          <p style="margin‑top:.5rem"><strong data‑en="Tech:" data‑ur="ٹیکنالوجی:">Tech:</strong> Semantic HTML + Flexbox — mobile‑first, SEO‑optimized</p>
+          <p style="margin‑top:.5rem"><strong data‑en="Tech:" data‑ur="ٹیکنالوجی:">Tech:</strong> Semantic HTML + Flexbox — mobile‑first, SEO‑optimized</p>
           <p style="margin‑top:.5rem"><strong data‑en="Status:" data‑ur="حالت:">Status:</strong> <span data‑en="Demo / Template — ready to customize" data‑ur="نمونہ — آپ کے لیے تیار ہے">Demo / Template — ready to customize</span></p>
         </div>
         <div class="card">
           <h3>🏷️ <span data‑en="Brand Identity Samples" data‑ur="برانڈ کے لیے نمونہ ڈیزائن">Brand Identity Samples</span></h3>
           <p><strong data‑en="Concepts:" data‑ur="خیالات:">Concepts:</strong> <span data‑en="Minimal logos combining icons + text — fitness/lab, service & personal‑mark styles" data‑ur="آئیکن اور لکھے ہوئے الفاظ کا ملاپ — فٹنس، سروس اور ذاتی شناخت کے لیے">Minimal logos combining icons + text — fitness/lab, service & personal‑mark styles</span></p>
-          <p style="margin‑top:.5rem"><strong data‑en="Tools:" data‑ur="آلات:">Tools:</strong> Figma → export SVG/PNG/JPG full‑pack delivery style</p>
-          <p style="margin‑top:.5rem"><strong data‑en="Note:" data‑ur="نوٹ:">Note:</strong> <span data‑en="Practice builds — showing my style & approach" data‑ur="مشقی کام — میرا انداز اور طریقہ کار دکھانے کے لیے">Practice builds — showing my style & approach</span></p>
-        </div>
-    </div>
+          <p style="margin‑top:.5rem"><strong data‑en="Tools:" data‑ur="آلات:">Tools:</strong> Figma → export SVG/PNG/JPG full‑pack delivery style</p>
+          <p style="margin‑top:.5rem"><strong data‑en="Note:" data‑ur="نوٹ:">Note:</stron
